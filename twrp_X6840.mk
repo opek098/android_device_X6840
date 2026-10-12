@@ -10,6 +10,9 @@ $(call inherit-product, device/infinix/X6840/device.mk)
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+# Include Fox props.
+$(call inherit-product, device/infinix/X6895/fox.mk)
+
 # Product Specifics
 PRODUCT_NAME := twrp_X6840
 PRODUCT_DEVICE := X6840

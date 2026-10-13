@@ -3,7 +3,6 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
 # Inherit from Infinix-X6840 device
 $(call inherit-product, device/infinix/X6840/device.mk)
 

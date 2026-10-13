@@ -36,12 +36,6 @@ unset FOX_VENDOR_BOOT_POSTPROCESS_SCRIPT FOX_REFERENCE_VENDOR_BOOT_IMAGE
 export FOX_USE_ZSTD_BINARY=1
 export FOX_USE_DMSETUP=1
 
-legacy_patch="${device_dir}/patches/03-patch-vendor-boot-postprocess.patch"
-if (cd "${workspace_root}" && patch -p1 -R --dry-run --silent < "${legacy_patch}" >/dev/null 2>&1); then
-    (cd "${workspace_root}" && patch -p1 -R --silent < "${legacy_patch}") || return 1
-fi
-unset legacy_patch
-
 patches_ok=true
 for patch_file in "${patch_files[@]}"; do
     if [[ ! -f "${patch_file}" ]] || ! command -v patch >/dev/null 2>&1; then

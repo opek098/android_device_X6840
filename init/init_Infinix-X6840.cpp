@@ -28,7 +28,7 @@ void vendor_load_properties()
         property_override(string("ro.product.") + prop + string("name"), "X6840");
         property_override(string("ro.product.") + prop + string("device"), "Infinix-X6840");
         property_override(string("ro.product.") + prop + string("model"), "Infinix X6840");
-        property_override(string("ro.product.") + prop + string("marketname"), "Infinix SMART 20i");
+        property_override(string("ro.product.") + prop + string("marketname"), "Infinix SMART 20");
         property_override(string("ro.product.system.") + prop + string("device"), "Infinix SMART 20");
     }
     property_override("ro.bootimage.build.date.utc", "1609430400");

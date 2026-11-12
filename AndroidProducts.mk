@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fox_X6840.mk
+    $(LOCAL_DIR)/twrp_X6840.mk
